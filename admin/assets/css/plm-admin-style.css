@@ -1,0 +1,280 @@
+/* Spinner */
+.plm-loading {
+  position: fixed;
+  z-index: 999999;
+  height: 2em;
+  width: 2em;
+  overflow: show;
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+/* Transparent Overlay */
+.plm-loading:before {
+  content: '';
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.3);
+}
+/* :not(:required) hides these rules from IE9 and below */
+.plm-loading:not(:required) {
+  /* hide "loading..." text */
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+.plm-loading:not(:required):after {
+  content: '';
+  display: block;
+  font-size: 10px;
+  width: 1em;
+  height: 1em;
+  margin-top: -0.5em;
+  -webkit-animation: spinner 1500ms infinite linear;
+  -moz-animation: spinner 1500ms infinite linear;
+  -ms-animation: spinner 1500ms infinite linear;
+  -o-animation: spinner 1500ms infinite linear;
+  animation: spinner 1500ms infinite linear;
+  border-radius: 0.5em;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.75) 1.5em 0 0 0, rgba(0, 0, 0, 0.75) 1.1em 1.1em 0 0, rgba(0, 0, 0, 0.75) 0 1.5em 0 0, rgba(0, 0, 0, 0.75) -1.1em 1.1em 0 0, rgba(0, 0, 0, 0.5) -1.5em 0 0 0, rgba(0, 0, 0, 0.5) -1.1em -1.1em 0 0, rgba(0, 0, 0, 0.75) 0 -1.5em 0 0, rgba(0, 0, 0, 0.75) 1.1em -1.1em 0 0;
+  box-shadow: rgba(0, 0, 0, 0.75) 1.5em 0 0 0, rgba(0, 0, 0, 0.75) 1.1em 1.1em 0 0, rgba(0, 0, 0, 0.75) 0 1.5em 0 0, rgba(0, 0, 0, 0.75) -1.1em 1.1em 0 0, rgba(0, 0, 0, 0.75) -1.5em 0 0 0, rgba(0, 0, 0, 0.75) -1.1em -1.1em 0 0, rgba(0, 0, 0, 0.75) 0 -1.5em 0 0, rgba(0, 0, 0, 0.75) 1.1em -1.1em 0 0;
+}
+/* Animation */
+@-webkit-keyframes spinner {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-moz-keyframes spinner {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-o-keyframes spinner {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes spinner {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+/*
+* RESPONSIVE COLUMNS CLASSES
+*/
+
+.five-sixths,
+.four-sixths,
+.one-fourth,
+.one-half,
+.one-sixth,
+.one-third,
+.three-fourths,
+.three-sixths,
+.two-fourths,
+.two-sixths,
+.two-thirds {
+  float: left;
+  margin-left: 2.564102564102564%;
+}
+
+.one-half,
+.three-sixths,
+.two-fourths {
+  width: 48.717948717948715%;
+}
+
+.one-third,
+.two-sixths {
+  width: 31.623931623931625%;
+}
+
+.four-sixths,
+.two-thirds {
+  width: 65.81196581196582%;
+}
+
+.one-fourth {
+  width: 23.076923076923077%;
+}
+
+.three-fourths {
+  width: 74.35897435897436%;
+}
+
+.one-sixth {
+  width: 14.52991452991453%;
+}
+
+.five-sixths {
+  width: 82.90598290598291%;
+}
+
+.first {
+  clear: both;
+  margin-left: 0;
+}
+
+.license_renewal_group #license-renewal-table,
+#plm_license_manager_product_data .excluded_file_group #excluded-file-table {
+    border: 1px solid #eee;
+    padding: 8px;
+}
+.license_renewal_group #license-renewal-table tbody input,
+.license_renewal_group #license-renewal-table tbody button,
+#plm_license_manager_product_data .excluded_file_group #excluded-file-table tbody input, 
+#plm_license_manager_product_data .excluded_file_group #excluded-file-table tbody button {
+    width: 100%;
+}
+.license_renewal_group #license-renewal-table thead tr,
+#plm_license_manager_product_data .excluded_file_group #excluded-file-table thead tr {
+    background-color: #f1f1f1;
+}
+.license_renewal_group #license-renewal-table thead tr th,
+#plm_license_manager_product_data .excluded_file_group #excluded-file-table thead tr th {
+    padding: 6px;
+}
+.license_renewal_group #license-renewal-table,
+#plm_license_manager_product_data .excluded_file_group #excluded-file-table,
+.woocommerce_options_panel #excluded-file-table input[type=text]{
+  width:100%;
+}
+#registered-domain-wrapper{
+  overflow:auto; 
+  height:157px;
+  width:50%;
+  border:1px solid #ccc; 
+  position: relative;
+}
+#action-notification{
+  position:absolute;
+  text-align:center;
+  width:100%;
+  line-height: 2;
+  margin: 0;
+  font-weight: bold;
+  background-color: rgba(136, 130, 130, 0.27);
+}
+#action-notification.message-success{
+  color: #028a20;
+}
+#action-notification.message-error{
+  color: #900;
+}
+.plm-message{
+    background-color: #fff;
+    line-height: 2;
+    padding: 6px 0 6px 12px;
+    
+}
+.plm-error{
+  border-left: 4px solid #900;
+}
+.plm-success{
+  border-left: 4px solid #46b450;
+}
+#registered-domain-wrapper .del{
+  cursor: pointer;
+}
+#registered-domain-wrapper .del:hover .dashicons-trash:before {
+    color: #900;
+}
+/*
+*  ADS
+*/
+#plm-ads .postbox {
+    border: 1px solid #04befd;
+    -webkit-box-shadow: 8px 8px 5px 0px rgba(0,0,0,0.67);
+    -moz-box-shadow: 8px 8px 5px 0px rgba(0,0,0,0.67);
+    box-shadow: 8px 8px 5px 0px rgba(0,0,0,0.67);
+}
+#plm-ads .ads-header {
+    padding: 0;
+    border-bottom: 1px solid #0073aa;
+    margin-bottom: 6px;
+    padding-bottom: 6px;
+    color: #0073aa;
+    font-weight: bold;
+}
+#plm-ads #pro-list li:before {
+    content: "+";
+    margin-right: 6px;
+    font-weight: bold;
+}
+#plm-ads #site-logo:focus{
+  box-shadow:none;
+}
+/*
+* MEDIA STYLES
+*/ 
+@media only screen and (max-width: 860px) {
+
+  .five-sixths,
+  .four-sixths,
+  .one-fourth,
+  .one-half,
+  .one-sixth,
+  .one-third,
+  .three-fourths,
+  .three-sixths,
+  .two-fourths,
+  .two-sixths,
+  .two-thirds {
+    margin: 0;
+    width: 100%;
+  }
+
+}
